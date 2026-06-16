@@ -1,6 +1,6 @@
 # Computer Vision HW3 + HW3.5
 
-Полный отчёт: [`notebooks/hw3_server.pdf`](notebooks/hw3_server.pdf)
+Полный отчёт: [`notebooks/hw3_server.pdf`](notebooks/hw3_server.pdf) (~7 MB, для просмотра на GitHub; если превью не открывается — **Download raw file**)
 
 ## HW3 — DETR на COCO-subset (10 классов)
 
