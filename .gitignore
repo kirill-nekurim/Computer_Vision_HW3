@@ -5,7 +5,8 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 
-# Notebooks: only hw3_server.ipynb is tracked (legacy notebooks kept locally)
+# Notebooks kept locally; PDF report is tracked instead
+notebooks/hw3_server.ipynb
 notebooks/hw3_detr_server.ipynb
 notebooks/hw35_synthetic_server.ipynb
 
