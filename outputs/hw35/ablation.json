@@ -1,0 +1,31 @@
+{
+  "rows": [
+    {
+      "experiment": "baseline",
+      "use_synthetic": false,
+      "train_samples": 7236,
+      "accuracy": 0.8593996840442338,
+      "macro_f1": 0.667086948773937,
+      "recall_truck": 0.6756756756756757,
+      "recall_bicycle": 0.7647058823529411,
+      "recall_chair": 0.7976190476190477,
+      "mean_recall_rare": 0.7460002018825548
+    },
+    {
+      "experiment": "with_synthetic",
+      "use_synthetic": true,
+      "train_samples": 7326,
+      "accuracy": 0.8467614533965245,
+      "macro_f1": 0.631694382912672,
+      "recall_truck": 0.6216216216216216,
+      "recall_bicycle": 0.7647058823529411,
+      "recall_chair": 0.7559523809523809,
+      "mean_recall_rare": 0.7140932949756479
+    }
+  ],
+  "delta_with_synthetic_minus_baseline": {
+    "accuracy": -0.012638230647709303,
+    "macro_f1": -0.035392565861265046,
+    "mean_recall_rare": -0.031906906906906896
+  }
+}

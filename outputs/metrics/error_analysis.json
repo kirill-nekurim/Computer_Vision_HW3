@@ -1,0 +1,22 @@
+{
+  "score_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "totals": {
+    "classification_errors": 9,
+    "localization_errors": 187,
+    "true_positives": 444,
+    "false_positives": 463,
+    "false_negatives": 255
+  },
+  "per_class_classification_errors": {
+    "truck": 7,
+    "bus": 1,
+    "chair": 1
+  },
+  "per_class_localization_errors": {
+    "person": 169,
+    "car": 15,
+    "dog": 1,
+    "truck": 2
+  }
+}

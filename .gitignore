@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+.ipynb_checkpoints/
+
+# Notebooks: only hw3_server.ipynb is tracked (legacy notebooks kept locally)
+notebooks/hw3_detr_server.ipynb
+notebooks/hw35_synthetic_server.ipynb
+
+data/coco/
+data/coco_subset/
+outputs/checkpoints/
+outputs/tensorboard/
+*.pt
+*.pth
+
+# Keep directory structure placeholders
+!outputs/.gitkeep
+!data/.gitkeep
+data/cls_crops/
+outputs/hw35/baseline/best.pt
+outputs/hw35/with_synthetic/best.pt
+outputs/profiler/
+outputs/visualizations/

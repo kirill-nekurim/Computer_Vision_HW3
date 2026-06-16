@@ -1,0 +1,64 @@
+{
+  "sd_model": "runwayml/stable-diffusion-v1-5",
+  "controlnet_model": "lllyasviel/sd-controlnet-canny",
+  "classes": {
+    "truck": {
+      "num_generated": 30,
+      "prompt": "(large cargo truck:1.3), photorealistic photo, truck as the main subject, clearly visible vehicle, highway, sharp focus, daylight",
+      "prompt_variants": [
+        "(large cargo truck:1.3), photorealistic photo, truck as the main subject, clearly visible vehicle, highway, sharp focus, daylight",
+        "(delivery truck:1.3), white box truck, front three-quarter view, photorealistic, truck clearly visible, daylight",
+        "(semi truck:1.2), photorealistic photo, large truck as main subject, on road, sharp focus"
+      ],
+      "negative_prompt": "blurry, low quality, distorted, cartoon, painting, watermark, text, letters, empty scene, no object, landscape only, abstract, texture only, empty road, road only, highway without vehicle, no truck, cars only, street without truck",
+      "guidance_scale": 9.0,
+      "control_scale": 0.75,
+      "examples": [
+        "/root/hw3-detr/data/synthetic/truck/synthetic_0000.jpg",
+        "/root/hw3-detr/data/synthetic/truck/synthetic_0001.jpg",
+        "/root/hw3-detr/data/synthetic/truck/synthetic_0002.jpg",
+        "/root/hw3-detr/data/synthetic/truck/synthetic_0003.jpg",
+        "/root/hw3-detr/data/synthetic/truck/synthetic_0004.jpg"
+      ]
+    },
+    "bicycle": {
+      "num_generated": 30,
+      "prompt": "(bicycle:1.2), photorealistic photo, bicycle as the main subject, outdoor scene, sharp focus, high quality",
+      "prompt_variants": [
+        "(bicycle:1.2), photorealistic photo, bicycle as the main subject, outdoor scene, sharp focus, high quality",
+        "(road bicycle:1.2), photorealistic photo, bicycle clearly visible, park or street, sharp focus"
+      ],
+      "negative_prompt": "blurry, low quality, distorted, cartoon, painting, watermark, text, letters, empty scene, no object, landscape only, abstract, texture only, empty path, no bicycle, person walking only, road without bicycle",
+      "guidance_scale": 7.5,
+      "control_scale": 1.0,
+      "examples": [
+        "/root/hw3-detr/data/synthetic/bicycle/synthetic_0000.jpg",
+        "/root/hw3-detr/data/synthetic/bicycle/synthetic_0001.jpg",
+        "/root/hw3-detr/data/synthetic/bicycle/synthetic_0002.jpg",
+        "/root/hw3-detr/data/synthetic/bicycle/synthetic_0003.jpg",
+        "/root/hw3-detr/data/synthetic/bicycle/synthetic_0004.jpg"
+      ]
+    },
+    "chair": {
+      "num_generated": 30,
+      "prompt": "(wooden chair:1.3), photorealistic photo, single chair as the main subject, centered in frame, indoor scene, sharp focus, high quality",
+      "prompt_variants": [
+        "(wooden chair:1.3), photorealistic photo, single chair as the main subject, centered in frame, indoor scene, sharp focus, high quality",
+        "(dining chair:1.3), photorealistic photo, one chair clearly visible, living room, sharp focus",
+        "(office chair:1.2), photorealistic photo, chair as main subject, indoor scene, sharp focus"
+      ],
+      "negative_prompt": "blurry, low quality, distorted, cartoon, painting, watermark, text, letters, empty scene, no object, landscape only, abstract, texture only, empty room, room without furniture, no chair, table only, sofa, bench",
+      "guidance_scale": 9.5,
+      "control_scale": 0.7,
+      "examples": [
+        "/root/hw3-detr/data/synthetic/chair/synthetic_0000.jpg",
+        "/root/hw3-detr/data/synthetic/chair/synthetic_0001.jpg",
+        "/root/hw3-detr/data/synthetic/chair/synthetic_0002.jpg",
+        "/root/hw3-detr/data/synthetic/chair/synthetic_0003.jpg",
+        "/root/hw3-detr/data/synthetic/chair/synthetic_0004.jpg"
+      ]
+    }
+  },
+  "device": "cuda",
+  "num_images_per_class": 30
+}
